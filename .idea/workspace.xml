@@ -10,14 +10,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/sparta_project" />
   </component>
+  <component name="JupyterTrust" id="cf19bf3a-fb37-4983-bd9a-ed7286bce576" />
   <component name="ProjectId" id="1eqAuzH8CpbzxChnM7Cxps8nw8X" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -32,7 +34,29 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="homework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="genie" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="homework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -57,6 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.genie" />
       </list>
     </recent_temporary>
@@ -77,7 +102,9 @@
       <workItem from="1596287433347" duration="320000" />
       <workItem from="1596288487229" duration="1581000" />
       <workItem from="1596291164052" duration="120000" />
-      <workItem from="1596291320453" duration="440000" />
+      <workItem from="1596291320453" duration="950000" />
+      <workItem from="1596336368099" duration="35000" />
+      <workItem from="1596801197778" duration="10310000" />
     </task>
     <servers />
   </component>
@@ -95,30 +122,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="654" y="274" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1596287724569" />
-    <state x="1042" y="170" key="FileChooserDialogImpl" timestamp="1596291161369">
+    <state x="1042" y="170" key="FileChooserDialogImpl" timestamp="1596336400678">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="1042" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596291161369" />
-    <state width="750" height="210" key="GridCell.Tab.0.bottom" timestamp="1596291162553">
+    <state x="1042" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596336400678" />
+    <state width="1481" height="112" key="GridCell.Tab.0.bottom" timestamp="1596816682918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="750" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596291162553" />
-    <state width="750" height="210" key="GridCell.Tab.0.center" timestamp="1596291162537">
+    <state width="1481" height="112" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596816682918" />
+    <state width="1481" height="112" key="GridCell.Tab.0.center" timestamp="1596816682918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="750" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596291162537" />
-    <state width="750" height="210" key="GridCell.Tab.0.left" timestamp="1596291162537">
+    <state width="1481" height="112" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596816682918" />
+    <state width="1481" height="112" key="GridCell.Tab.0.left" timestamp="1596816682918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="750" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596291162537" />
-    <state width="750" height="210" key="GridCell.Tab.0.right" timestamp="1596291162553">
+    <state width="1481" height="112" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596816682918" />
+    <state width="1481" height="112" key="GridCell.Tab.0.right" timestamp="1596816682918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="750" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596291162553" />
-    <state x="277" y="56" key="SettingsEditor" timestamp="1596291764781">
+    <state width="1481" height="112" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596816682918" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1596803746715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596291764781" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596803746715" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -128,10 +155,17 @@
           <line>1</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/templates/index.html</url>
+          <line>210</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/homework$genie.coverage" NAME="genie Coverage Results" MODIFIED="1596290740349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/homework$app.coverage" NAME="app Coverage Results" MODIFIED="1596810901864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

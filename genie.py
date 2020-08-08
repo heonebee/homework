@@ -29,3 +29,9 @@ for tr in trs:
     }
 
     db.genie.insert_one(doc)
+
+all_songs = list(db.genie.find({}))
+
+for song in all_songs:
+    norae = all_songs['artist']
+    print(norae)

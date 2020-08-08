@@ -78,7 +78,6 @@
         $(document).ready(function () {
             $('#orders-box').html('');
             exchange();
-            showOrders();
         });
 
         function exchange() {
@@ -100,76 +99,23 @@
             let name = $('#order-name').val();
             let address = $('#order-address').val();
             let phone = $('#order-phone').val();
-            let count = $('#order-num').val()
+            let count = $('#order-count').val()
 
             if (name == '') {
                 alert('이름을 입력하세요.');
                 $('#order-name').focus();
-                return
-            } else if (address == '--주소를 선택하세요--') {
+            } else if (address == '') {
                 alert('주소를 입력하세요.');
                 $('#order-address').focus();
-                return
             } else if (phone == '') {
                 alert('전화번호를 입력하세요.');
                 $('#order-phone').focus();
-                return
-            } else if (isCellPhone(phone)) {
-                alert('휴대폰번호 입력 오류! /n 010-0000-0000 형식으로 입력해주세요');
-                return
             } else if (count == '--수량을 선택하세요--') {
                 alert('수량을 입력하세요.');
                 $('#order-num').focus();
-                return
+            } else {
+                console.log(name, address, phone, count)
             }
-            $.ajax({
-                type: "POST",
-                url: "/order",
-                date: {name_give: name, address_give: address, phone_give: phone, count_give: count},
-                success: function (response) {
-                    if (response['result'] == 'success') {
-                        alert('주문이 완료되었습니다!');
-                        window.location.reload();
-                    } else {
-                        alert('주문 실패!');
-                    }
-                }
-            })
-
-        }
-
-        function isCellPhone(p) {
-            let regExp = /^(01[016789]{1}|02|0[3-9]{1}[0-9]{1})[-][0-9]{3,4}[-][0-9]{4}$/;
-            return regExp.test(p);
-        }
-
-        function showOrders() {
-            $.ajax({
-                type: "GET",
-                url: "/order",
-                date: {},
-                success: function (response) {
-                    if (response['result'] == 'success') {
-                        let orders = response['orders'];
-                        for (let i = 0; i < orders.length; i++) {
-                            makeOrderRow(orders[i]['name'], orders[i]['address'], orders[i]['phone'], orders[i]['count'])
-                        }
-                    } else {
-                        alert('주문을 받아오지 못했습니다.');
-                    }
-                }
-            })
-        }
-
-        function makeOrderRow(name, address, phone, count) {
-            let tempHtml = `<tr>
-                <td>${name}</td>
-                <td">${address}</td>
-                <td>${phone}</td>
-                <td>${count}</td>
-            </tr>`;
-
-            $('#orders-box').append(tempHtml);
         }
 
     </script>
@@ -199,14 +145,9 @@
 
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">주소</label>
+                <span class="input-group-text" id="basic-addon01">주소</span>
             </div>
-            <select id="order-address" class="custom-select" id="inputGroupSelect01">
-                <option selected>--주소를 선택하세요--</option>
-                <option value="1">서울</option>
-                <option value="2">경기</option>
-                <option value="3">부산</option>
-            </select>
+            <input id="order-address" type="text" class="form-control">
         </div>
 
         <div class="input-group mb-3">
